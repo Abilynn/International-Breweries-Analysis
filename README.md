@@ -34,4 +34,5 @@ BRAND ANALYSIS
 10. 
 11. COUNTRIES ANALYSIS
 12. 1. Country with the highest consumption of beer.
-13. 2. Highest sales personnel of Budweiser in Senegal 3. Country with the highest profit of the fourth quarter in 2019
+13. 2. Highest sales personnel of Budweiser in Senegal
+14. 3. Country with the highest profit of the fourth quarter in 2019
