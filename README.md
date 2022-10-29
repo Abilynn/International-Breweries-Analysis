@@ -11,6 +11,7 @@ The Business Objective of this project is to maximize profit and reduce loss to 
 The data used in this analysis was provided already cleaned and validated.
 
 Analysis is performed to generate insights on the following business questions
+
 PROFIT ANALYSIS
 1. Within the space of the last three years, what was the profit worth of the breweries, inclusive of the anglophone and the francophone territories?
 2. Compare the total profit between these two territories in order for the territory manager to make a strategic decision that will aid profit maximization in 2020.
