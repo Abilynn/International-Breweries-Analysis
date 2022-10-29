@@ -1,1 +1,17 @@
+--Within the space of the last three years, what was the profit worth of the breweries, inclusive of the anglophone and the francophone territories?
 
+SELECT brands, SUM(profit) profit_worth
+FROM international_breweries
+WHERE years >= 2019 - 2 AND years <= 2019
+GROUP BE brands
+ORDER BY brands
+
+--Compare the total profit between these two territories in order for the territory manager to make a strategic decision that will aid profit maximization in 2020.
+
+SELECT 'Anglophone' as territories, SUM(profit) profit_worth
+FROM international_breweries
+WHERE countries in ('NIGERIA', 'GHANA')
+UNION ALL
+SELECT 'Francophone' as territories, SUM(profit) profit_worth
+FROM international_breweries
+WHERE countries in ('Senegal', 'Togo', 'Benin')
