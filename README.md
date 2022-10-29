@@ -5,7 +5,7 @@ This project was done as Capstone project for the Data analysis course for Digig
 Project Overview
 
 A profit, brand and country analysis on the international breweries data recorded for a duration of three years(2017-2019) to aid better decision making in order to maximize profit and reduce loss to the lowest minimum.
-This Analysis is done using Structured Query Language(SQL)
+This Analysis is done using Structured Query Language(SQL) in PostgrSQL DBMS.
 
 The Business Objective of this project is to maximize profit and reduce loss to the lowest minimum.
 The data used in this analysis was provided already cleaned and validated.
