@@ -1,3 +1,5 @@
+--PROFIT ANALYSIS
+
 --Within the space of the last three years, what was the profit worth of the breweries, inclusive of the anglophone and the francophone territories?
 
 SELECT brands, SUM(profit) profit_worth
@@ -15,3 +17,58 @@ UNION ALL
 SELECT 'Francophone' as territories, SUM(profit) profit_worth
 FROM international_breweries
 WHERE countries in ('Senegal', 'Togo', 'Benin')
+
+--What country generated the highest profit in 2019.
+SELECT countries, SUM(profit) highest_profit_2019
+FROM international_breweries
+WHERE years = 2019
+GROUP BY countries
+ORDER BY highest_profit_2019 DESC LIMIT 1
+
+--Find the year with the highest profit.
+SELECT years, SUM(profit) highest_profit
+FROM international_breweries
+GROUP BY years
+ORDER BY highest_profit DESC LIMIT 1
+
+--Which month in the three years was the least profit generated?
+SELECT months, SUM(profit) total_profit
+FROM international_breweries
+GROUP BY months
+ORDER BY total_profit LIMIT 1
+
+--What was the minimum profit in the month of December 2018?
+SELECT months, MIN(profit) min_profit
+FROM internatinal_breweries
+WHERE months = 'December' AND years = 2018
+GROUP BY months
+
+--Compare the profit for each of the months in 2019
+SELECT months, SUM(profit) total_profit
+FROM international_breweries
+WHERE years = 2019
+GROUP BY months
+
+--Which particular brand generated the highest profit in Senegal?
+SELECT brands, SUM(profit) total_profit
+FROM international_breweries
+WHERE countries = 'Senegal'
+GROUP BY brands
+ORDER_BY total_profit DESC LIMIT 1
+
+--BRAND ANALYSIS
+
+--Within the last two years, which were the top three brands consumed in the francophone countries.
+SELECT brands, SUM(quantity) total_consumed
+FROM internatinal-breweries
+WHERE years >= 2019-1 AND years <= 2019
+AND countries IN ('Senegal', 'Togo', 'Benin')
+GROUP BY brands
+ORDER BY total_consumed DESC LIMIT 3
+
+--Find out the top two choice of consumer brands in Ghana.
+SELECT brands, SUM(quantity) total_consumed
+FROM international_breweries
+WHERE countries = 'Ghana'
+GROUP BY brands
+ORDER BY totaL_consumed DESC LIMIT 2
