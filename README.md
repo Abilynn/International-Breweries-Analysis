@@ -32,8 +32,8 @@ BRAND ANALYSIS
 7. Beer consumption in Nigeria.
 8. Level of consumption of Budweiser in the regions in Nigeria.
 9. Level of consumption of Budweiser in the regions in Nigeria in 2019 (Decision on Promo)
-10. 
-11. COUNTRIES ANALYSIS
-12. 1. Country with the highest consumption of beer.
-13. 2. Highest sales personnel of Budweiser in Senegal
-14. 3. Country with the highest profit of the fourth quarter in 2019
+
+COUNTRIES ANALYSIS
+1.Country with the highest consumption of beer.
+2. Highest sales personnel of Budweiser in Senegal
+3. Country with the highest profit of the fourth quarter in 2019
